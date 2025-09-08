@@ -1,4 +1,4 @@
-import { Bell } from "lucide-react";
+import { Bell, Menu } from "lucide-react";
 
 export function Header({ title }: { title: string }) {
   return (
