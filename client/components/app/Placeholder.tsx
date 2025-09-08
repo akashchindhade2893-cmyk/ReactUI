@@ -1,4 +1,10 @@
-export function Placeholder({ title, description }: { title: string; description?: string }) {
+export function Placeholder({
+  title,
+  description,
+}: {
+  title: string;
+  description?: string;
+}) {
   return (
     <div className="grid h-[60vh] place-items-center rounded-xl border bg-white shadow-card">
       <div className="text-center">

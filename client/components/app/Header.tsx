@@ -14,7 +14,9 @@ export function Header({ title }: { title: string }) {
             <span className="absolute -right-0 -top-0 h-2 w-2 rounded-full bg-brand"></span>
           </button>
           <div className="flex items-center gap-3">
-            <span className="hidden text-sm text-slate-600 md:block">Akash Chindhade</span>
+            <span className="hidden text-sm text-slate-600 md:block">
+              Akash Chindhade
+            </span>
             <div className="h-8 w-8 rounded-full bg-gradient-to-br from-brand to-blue-400 text-white grid place-items-center text-sm font-semibold">
               AC
             </div>

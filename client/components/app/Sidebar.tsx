@@ -13,7 +13,9 @@ export function Sidebar() {
   return (
     <aside className="h-full w-64 shrink-0 border-r bg-white/80 backdrop-blur-sm">
       <div className="flex h-16 items-center gap-2 border-b px-4">
-        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white font-bold">H</div>
+        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white font-bold">
+          H
+        </div>
         <div className="leading-tight">
           <div className="font-semibold text-slate-800">HealthTrack</div>
           <div className="text-xs text-slate-500">Patient Portal</div>
