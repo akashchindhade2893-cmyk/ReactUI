@@ -1,6 +1,6 @@
 import { Bell, Menu } from "lucide-react";
 
-export function Header({ title }: { title: string }) {
+export function Header({ title, onMenuClick }: { title: string; onMenuClick?: () => void }) {
   return (
     <header className="sticky top-0 z-10 h-16 border-b bg-white/70 backdrop-blur-sm">
       <div className="flex h-full items-center justify-between px-6">
