@@ -57,6 +57,16 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand and dashboard accents (HSL) */
+    --brand: 221 83% 53%;
+    --brand-foreground: 0 0% 100%;
+    --brand-soft: 221 89% 96%;
+
+    --metric-heart: 217 91% 60%; /* blue */
+    --metric-bp: 173 80% 40%;    /* teal/green */
+    --metric-weight: 27 96% 55%; /* orange */
+    --metric-sugar: 8 84% 55%;   /* red/orange */
   }
 
   .dark {
