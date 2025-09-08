@@ -27,7 +27,8 @@ const theme = createTheme({
   },
   shape: { borderRadius: 12 },
   typography: {
-    fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
+    fontFamily:
+      'Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
     h1: { fontSize: "1.25rem", fontWeight: 600 },
     h2: { fontSize: "1rem", fontWeight: 600 },
     body1: { fontSize: "0.95rem" },
@@ -35,7 +36,10 @@ const theme = createTheme({
   components: {
     MuiPaper: {
       styleOverrides: {
-        root: { boxShadow: "0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.06)" },
+        root: {
+          boxShadow:
+            "0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.06)",
+        },
       },
     },
     MuiButton: {
