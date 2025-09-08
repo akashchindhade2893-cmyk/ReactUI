@@ -26,7 +26,7 @@ export function Header({ title, onMenuClick }: { title: string; onMenuClick?: ()
             <span className="hidden text-sm text-slate-600 md:block">
               Akash Chindhade
             </span>
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-brand to-blue-400 text-white grid place-items-center text-sm font-semibold">
+            <div className="grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br from-brand to-blue-400 text-sm font-semibold text-white">
               AC
             </div>
           </div>
