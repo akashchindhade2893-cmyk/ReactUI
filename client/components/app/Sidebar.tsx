@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import { CalendarDays, FileText, LayoutDashboard, Pill } from "lucide-react";
 
 const navItemClasses = ({ isActive }: { isActive: boolean }) =>
