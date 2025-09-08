@@ -12,27 +12,32 @@ import DashboardLayout from "@/components/app/Layout";
 import Appointments from "./pages/Appointments";
 import Medications from "./pages/Medications";
 import Records from "./pages/Records";
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import theme from "./theme";
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route element={<DashboardLayout />}>
-            <Route index element={<Index />} />
-            <Route path="appointments" element={<Appointments />} />
-            <Route path="medications" element={<Medications />} />
-            <Route path="records" element={<Records />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route element={<DashboardLayout />}>
+              <Route index element={<Index />} />
+              <Route path="appointments" element={<Appointments />} />
+              <Route path="medications" element={<Medications />} />
+              <Route path="records" element={<Records />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </ThemeProvider>
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
