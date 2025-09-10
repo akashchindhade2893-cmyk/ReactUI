@@ -1,13 +1,13 @@
-import React from 'react';
-import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Dashboard from './src/screens/Dashboard';
-import Appointments from './src/screens/Appointments';
-import Medications from './src/screens/Medications';
-import Records from './src/screens/Records';
-import { colors } from './src/theme';
-import { Ionicons } from '@expo/vector-icons';
-import { StatusBar } from 'expo-status-bar';
+import React from "react";
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Dashboard from "./src/screens/Dashboard";
+import Appointments from "./src/screens/Appointments";
+import Medications from "./src/screens/Medications";
+import Records from "./src/screens/Records";
+import { colors } from "./src/theme";
+import { Ionicons } from "@expo/vector-icons";
+import { StatusBar } from "expo-status-bar";
 
 const Tab = createBottomTabNavigator();
 
@@ -24,19 +24,19 @@ export default function App() {
         screenOptions={({ route }) => ({
           headerShown: true,
           tabBarActiveTintColor: colors.brand,
-          tabBarInactiveTintColor: '#94A3B8',
-          tabBarStyle: { backgroundColor: '#fff' },
-          headerTitleAlign: 'left',
-          headerStyle: { backgroundColor: '#fff' },
+          tabBarInactiveTintColor: "#94A3B8",
+          tabBarStyle: { backgroundColor: "#fff" },
+          headerTitleAlign: "left",
+          headerStyle: { backgroundColor: "#fff" },
           headerShadowVisible: false,
           tabBarIcon: ({ color, size }) => {
             const map: Record<string, keyof typeof Ionicons.glyphMap> = {
-              Dashboard: 'grid',
-              Appointments: 'calendar',
-              Medications: 'medkit',
-              Records: 'document-text-outline',
+              Dashboard: "grid",
+              Appointments: "calendar",
+              Medications: "medkit",
+              Records: "document-text-outline",
             };
-            const name = map[route.name] || 'ellipse';
+            const name = map[route.name] || "ellipse";
             return <Ionicons name={name} color={color} size={size} />;
           },
         })}
